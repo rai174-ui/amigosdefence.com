@@ -40,8 +40,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="container flex justify-between items-center py-4">
-        <Link to="/" className="flex items-center gap-2 logo">
-          <Shield size={32} className="text-accent" />
+        <Link to="/" className="flex items-center gap-3 logo">
+          <img src="/images/Amigos Logo small.jpg" alt="Amigos Defence Logo" style={{ height: '40px', borderRadius: '4px' }} />
           <span className="brand-name">AMIGOS DEFENCE</span>
         </Link>
         
@@ -102,8 +102,8 @@ function Footer() {
     <footer className="footer py-16" style={{ borderTop: '2px solid var(--border-color)' }}>
       <div className="container grid footer-grid">
         <div className="footer-brand">
-          <div className="flex items-center gap-2 mb-4">
-            <Shield size={28} className="text-accent" />
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/images/Amigos Logo small.jpg" alt="Amigos Defence Logo" style={{ height: '36px', borderRadius: '4px' }} />
             <span className="brand-name">AMIGOS DEFENCE</span>
           </div>
           <p className="text-muted" style={{ maxWidth: '300px' }}>
