@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Settings, Award, Globe } from 'lucide-react';
+import { ShieldCheck, Settings, Award, Globe, Briefcase, Truck, PackageCheck, Target } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         backgroundPosition: 'center',
         minHeight: '85vh',
         display: 'flex',
-        alignItems: 'flex-end', /* Align text to bottom for a cleaner look */
+        alignItems: 'flex-end', 
         paddingBottom: '6rem'
       }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -40,6 +40,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NEW: Core Capabilities Section */}
+      <section className="capabilities py-24" style={{ backgroundColor: 'var(--bg-gunmetal)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '1rem' }}>CORE CAPABILITIES</h2>
+            <p className="text-muted" style={{ maxWidth: '600px', margin: '0 auto' }}>
+              We provide comprehensive supply chain solutions, from procurement to deployment, ensuring your force is fully equipped for any mission.
+            </p>
+          </div>
+
+          <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+            <div className="glass-card flex-col items-center text-center" style={{ padding: '3rem 2rem' }}>
+              <Briefcase size={48} className="text-accent mb-4" />
+              <h3 className="mb-2">Federal Procurement</h3>
+              <p className="text-muted" style={{ fontSize: '0.9rem' }}>Streamlined contracting and purchasing vehicles tailored for DOD and federal agencies.</p>
+            </div>
+            
+            <div className="glass-card flex-col items-center text-center" style={{ padding: '3rem 2rem' }}>
+              <PackageCheck size={48} className="text-accent mb-4" />
+              <h3 className="mb-2">Custom Kitting</h3>
+              <p className="text-muted" style={{ fontSize: '0.9rem' }}>Purpose-built equipment loadouts assembled and delivered ready for immediate deployment.</p>
+            </div>
+
+            <div className="glass-card flex-col items-center text-center" style={{ padding: '3rem 2rem' }}>
+              <Truck size={48} className="text-accent mb-4" />
+              <h3 className="mb-2">Global Logistics</h3>
+              <p className="text-muted" style={{ fontSize: '0.9rem' }}>Secure, ITAR-compliant worldwide shipping and supply chain management.</p>
+            </div>
+
+            <div className="glass-card flex-col items-center text-center" style={{ padding: '3rem 2rem' }}>
+              <Target size={48} className="text-accent mb-4" />
+              <h3 className="mb-2">Mission Specific Solutions</h3>
+              <p className="text-muted" style={{ fontSize: '0.9rem' }}>Consultation and sourcing for specialized environments: CBRNE, EOD, and Covert Operations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Clean Catalog Preview */}
       <section className="catalog-preview py-24">
         <div className="container">
@@ -47,7 +85,7 @@ export default function Home() {
           <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
             
             <div className="flex-col items-center" style={{ transition: 'transform 0.3s', cursor: 'pointer' }}>
-              <div style={{ backgroundColor: 'var(--bg-gunmetal)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+              <div style={{ backgroundColor: 'var(--bg-gunmetal-light)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <img src="/images/vest2.jpeg" alt="Ballistic Vests" style={{ height: '300px', objectFit: 'contain' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem' }}>Ballistic Vests</h3>
@@ -55,7 +93,7 @@ export default function Home() {
             </div>
 
             <div className="flex-col items-center" style={{ transition: 'transform 0.3s', cursor: 'pointer' }}>
-              <div style={{ backgroundColor: 'var(--bg-gunmetal)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+              <div style={{ backgroundColor: 'var(--bg-gunmetal-light)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <img src="/images/helmet1.jpeg" alt="Tactical Helmets" style={{ height: '300px', objectFit: 'contain' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem' }}>Combat Helmets</h3>
@@ -63,7 +101,7 @@ export default function Home() {
             </div>
 
             <div className="flex-col items-center" style={{ transition: 'transform 0.3s', cursor: 'pointer' }}>
-              <div style={{ backgroundColor: 'var(--bg-gunmetal)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+              <div style={{ backgroundColor: 'var(--bg-gunmetal-light)', padding: '2rem', borderRadius: '8px', width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
                 <img src="/images/vip vest.jpeg" alt="VIP Protection" style={{ height: '300px', objectFit: 'contain' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem' }}>Covert Armor</h3>
@@ -93,6 +131,19 @@ export default function Home() {
             <div>
               <Link to="/about" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)' }}>Read Our Mission</Link>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* NEW: Contract Vehicles Banner */}
+      <section className="contracts py-16" style={{ backgroundColor: '#0A0A0A', borderTop: '1px solid #222' }}>
+        <div className="container text-center">
+          <h4 className="text-muted mb-6" style={{ letterSpacing: '2px' }}>PROUDLY SUPPORTING GOVERNMENT CONTRACT VEHICLES</h4>
+          <div className="flex justify-center items-center flex-wrap gap-8" style={{ opacity: 0.6 }}>
+            <span style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'Montserrat' }}>DLA TLS</span>
+            <span style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'Montserrat' }}>GSA ADVANTAGE</span>
+            <span style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'Montserrat' }}>FEDMALL</span>
+            <span style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'Montserrat' }}>TACOM</span>
           </div>
         </div>
       </section>
