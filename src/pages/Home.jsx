@@ -1,20 +1,58 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Settings, Award, Globe, Briefcase, Truck, PackageCheck, Target } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+const bannerImages = [
+  '/images/vest1.jpeg',
+  '/images/vest2.jpeg',
+  '/images/vest3.jpeg',
+  '/images/vest4.jpeg',
+  '/images/vest5.jpeg',
+  '/images/vest6.jpeg'
+];
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % bannerImages.length);
+    }, 4000); // Change image every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home-page" style={{ backgroundColor: 'var(--bg-matte)' }}>
-      {/* Minimalist Hero Section */}
+      {/* Minimalist Hero Section with Carousel Background */}
       <section className="hero" style={{ 
-        backgroundImage: `linear-gradient(to top, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.4) 60%, rgba(17, 17, 17, 0.2) 100%), url('/images/vest4.jpeg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        position: 'relative',
         minHeight: '85vh',
         display: 'flex',
         alignItems: 'flex-end', 
-        paddingBottom: '6rem'
+        paddingBottom: '6rem',
+        overflow: 'hidden'
       }}>
-        <div className="container" style={{ textAlign: 'center' }}>
+        {/* Background Images Layer */}
+        {bannerImages.map((src, index) => (
+          <div 
+            key={src}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              backgroundImage: `linear-gradient(to top, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.4) 60%, rgba(17, 17, 17, 0.2) 100%), url('${src}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: currentImageIndex === index ? 1 : 0,
+              transition: 'opacity 1.5s ease-in-out',
+              zIndex: 1
+            }}
+          />
+        ))}
+
+        <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <div className="hero-content" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <h1 className="text-gradient" style={{ fontSize: '4rem', marginBottom: '1rem', lineHeight: '1.1', textTransform: 'uppercase', letterSpacing: '2px' }}>
               Uncompromising Tactical Protection.
