@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-page">
       {/* Hero Section */}
       <section className="hero" style={{ 
-        backgroundImage: `linear-gradient(to right, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.4) 100%), url('/images/tacticaloperator.jpeg')`,
+        backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.85)), url('/images/tacticaloperator.jpeg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '80vh',
@@ -14,14 +14,21 @@ export default function Home() {
         alignItems: 'center'
       }}>
         <div className="container">
-          <div className="hero-content" style={{ maxWidth: '600px' }}>
-            <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>Next-Generation Tactical Protection.</h1>
-            <p className="text-muted" style={{ fontSize: '1.2rem', marginBottom: '2.5rem' }}>
+          <div className="hero-content" style={{ 
+            maxWidth: '650px', 
+            background: 'rgba(10, 10, 10, 0.65)', 
+            backdropFilter: 'blur(12px)',
+            padding: '3rem',
+            borderRadius: '12px',
+            border: '1px solid rgba(255, 255, 255, 0.1)'
+          }}>
+            <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.1' }}>NEXT-GENERATION TACTICAL PROTECTION.</h1>
+            <p className="text-muted" style={{ fontSize: '1.2rem', marginBottom: '2.5rem', color: '#E0E0E0' }}>
               Elite defense equipment engineered for modern combat and security operations. Precision, durability, and uncompromising safety.
             </p>
             <div className="flex gap-4">
               <Link to="/catalog" className="btn btn-primary">Explore the Catalog</Link>
-              <Link to="/contact" className="btn btn-outline">Request a Quote</Link>
+              <Link to="/contact" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.5)', color: '#FFF' }}>Request a Quote</Link>
             </div>
           </div>
         </div>
