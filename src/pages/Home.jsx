@@ -3,12 +3,13 @@ import { ShieldCheck, Settings, Award, Globe, Briefcase, Truck, PackageCheck, Ta
 import { useState, useEffect } from 'react';
 
 const bannerImages = [
-  '/images/vest1.jpeg',
-  '/images/vest2.jpeg',
-  '/images/vest3.jpeg',
-  '/images/vest4.jpeg',
-  '/images/vest5.jpeg',
-  '/images/vest6.jpeg'
+  '/images/banner images/1.jpeg',
+  '/images/banner images/2.jpg',
+  '/images/banner images/3.png',
+  '/images/banner images/vest1.jpeg',
+  '/images/banner images/vest2.jpeg',
+  '/images/banner images/vest3.jpeg',
+  '/images/banner images/vest5.jpeg'
 ];
 
 export default function Home() {
