@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-page" style={{ backgroundColor: 'var(--bg-matte)' }}>
       {/* Minimalist Hero Section */}
       <section className="hero" style={{ 
-        backgroundImage: `linear-gradient(to top, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.4) 60%, rgba(17, 17, 17, 0.2) 100%), url('/images/tactical.jpeg')`,
+        backgroundImage: `linear-gradient(to top, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.4) 60%, rgba(17, 17, 17, 0.2) 100%), url('/images/vest4.jpeg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '85vh',
