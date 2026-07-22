@@ -27,8 +27,9 @@ export default function Contact() {
 
           <div>
             <h3 className="mb-2">Direct Contact</h3>
-            <p className="text-muted">Email: procurement@amigosdefx.com</p>
-            <p className="text-muted">Phone: +1 (800) 555-DEFENCE</p>
+            <p className="text-muted">Padam Sharma</p>
+            <p className="text-muted">Mobile: +91 99712 99631</p>
+            <p className="text-muted">e-mail: padam@amigosdefence.com</p>
           </div>
         </div>
 
