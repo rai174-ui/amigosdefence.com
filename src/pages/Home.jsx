@@ -9,7 +9,8 @@ const bannerImages = [
   '/images/banner images/vest1.jpeg',
   '/images/banner images/vest2.jpeg',
   '/images/banner images/vest3.jpeg',
-  '/images/banner images/vest5.jpeg'
+  '/images/banner images/vest5.jpeg',
+  '/images/banner images/ZLOGo.jpg'
 ];
 
 export default function Home() {
