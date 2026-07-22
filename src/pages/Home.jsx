@@ -54,17 +54,17 @@ export default function Home() {
           />
         ))}
 
-        <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
-          <div className="hero-content" style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <h1 className="text-gradient" style={{ fontSize: '4rem', marginBottom: '1rem', lineHeight: '1.1', textTransform: 'uppercase', letterSpacing: '2px' }}>
+        <div className="container" style={{ textAlign: 'right', position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
+          <div className="hero-content" style={{ maxWidth: '600px' }}>
+            <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1rem', lineHeight: '1.1', textTransform: 'uppercase', letterSpacing: '2px' }}>
               AMIGOS DEFENCE TACTICAL PROTECTION.
             </h1>
-            <p className="text-muted" style={{ fontSize: '1.3rem', marginBottom: '3rem', color: '#D0D0D0' }}>
+            <p className="text-muted" style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#D0D0D0' }}>
               Precision-engineered defense equipment for elite operators. 
             </p>
-            <div className="flex justify-center gap-6">
-              <Link to="/catalog" className="btn btn-primary" style={{ padding: '1rem 3rem', fontSize: '1rem' }}>View Catalog</Link>
-              <Link to="/contact" className="btn btn-outline" style={{ padding: '1rem 3rem', fontSize: '1rem', borderColor: 'rgba(255,255,255,0.3)', color: '#FFF' }}>Get a Quote</Link>
+            <div className="flex justify-end gap-4" style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem' }}>
+              <Link to="/catalog" className="btn btn-primary" style={{ padding: '0.75rem 2rem', fontSize: '0.9rem' }}>View Catalog</Link>
+              <Link to="/contact" className="btn btn-outline" style={{ padding: '0.75rem 2rem', fontSize: '0.9rem', borderColor: 'rgba(255,255,255,0.3)', color: '#FFF' }}>Get a Quote</Link>
             </div>
           </div>
         </div>
