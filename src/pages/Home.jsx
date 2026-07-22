@@ -54,17 +54,17 @@ export default function Home() {
           />
         ))}
 
-        <div className="container" style={{ textAlign: 'right', position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
-          <div className="hero-content" style={{ maxWidth: '600px' }}>
-            <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1rem', lineHeight: '1.1', textTransform: 'uppercase', letterSpacing: '2px' }}>
+        <div className="container hero-container">
+          <div className="hero-content">
+            <h1 className="text-gradient hero-title">
               AMIGOS DEFENCE TACTICAL PROTECTION.
             </h1>
-            <p className="text-muted" style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#D0D0D0' }}>
+            <p className="text-muted hero-subtitle">
               Precision-engineered defense equipment for elite operators. 
             </p>
-            <div className="flex justify-end gap-4" style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem' }}>
-              <Link to="/catalog" className="btn btn-primary" style={{ padding: '0.75rem 2rem', fontSize: '0.9rem' }}>View Catalog</Link>
-              <Link to="/contact" className="btn btn-outline" style={{ padding: '0.75rem 2rem', fontSize: '0.9rem', borderColor: 'rgba(255,255,255,0.3)', color: '#FFF' }}>Get a Quote</Link>
+            <div className="hero-buttons">
+              <Link to="/catalog" className="btn btn-primary btn-hero">View Catalog</Link>
+              <Link to="/contact" className="btn btn-outline btn-hero">Get a Quote</Link>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
 
       {/* Subtle Trust Indicators */}
       <section className="trust-bar py-8" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-        <div className="container flex justify-center items-center flex-wrap" style={{ gap: '4rem', opacity: 0.8 }}>
+        <div className="container flex justify-center items-center flex-wrap trust-bar-flex" style={{ gap: '4rem', opacity: 0.8 }}>
           <div className="flex items-center gap-3"><ShieldCheck className="text-accent" size={24} /> <span style={{ fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>NIJ Certified</span></div>
           <div className="flex items-center gap-3"><Settings className="text-accent" size={24} /> <span style={{ fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>ISO Compliant</span></div>
           <div className="flex items-center gap-3"><Award className="text-accent" size={24} /> <span style={{ fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>Military Grade</span></div>

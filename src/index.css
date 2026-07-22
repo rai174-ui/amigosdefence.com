@@ -267,7 +267,57 @@ a {
   gap: 3rem;
 }
 
+/* Hero Section Specifics */
+.hero-container {
+  text-align: right;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero-content {
+  max-width: 600px;
+}
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #D0D0D0;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.btn-hero {
+  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
+  .hero-container {
+    text-align: center;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .trust-bar-flex {
+    flex-direction: column;
+    gap: 1.5rem !important;
+  }
+
   .top-utility-bar { display: none; }
   .desktop-menu { display: none; }
   .mobile-menu-btn { display: block; }
