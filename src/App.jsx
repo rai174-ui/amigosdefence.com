@@ -142,7 +142,7 @@ function Footer() {
       </div>
       <div className="container">
         <div className="footer-bottom mt-8">
-          <p className="text-muted">© 2026 AMIGOS DEFENCE SERVICES INC. All rights reserved.</p>
+          <p className="text-muted">© 2026 AMIGOS DEFENCE SERVICES. All rights reserved.</p>
         </div>
       </div>
     </footer>

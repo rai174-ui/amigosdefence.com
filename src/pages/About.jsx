@@ -8,7 +8,7 @@ export default function About() {
             Uncompromising Safety.<br/>Relentless Innovation.
           </h1>
           <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>
-            At AMIGOS DEFENCE SERVICES INC., our mission is singular: to protect those who protect us. 
+            At AMIGOS DEFENCE SERVICES, our mission is singular: to protect those who protect us. 
             Founded on the principles of engineering excellence and tactical superiority, we manufacture 
             and supply next-generation defense equipment for the world's most demanding environments.
           </p>
