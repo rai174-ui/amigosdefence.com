@@ -56,7 +56,7 @@ export default function Home() {
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <div className="hero-content" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <h1 className="text-gradient" style={{ fontSize: '4rem', marginBottom: '1rem', lineHeight: '1.1', textTransform: 'uppercase', letterSpacing: '2px' }}>
-              Uncompromising Tactical Protection.
+              AMIGOS DEFENCE TACTICAL PROTECTION.
             </h1>
             <p className="text-muted" style={{ fontSize: '1.3rem', marginBottom: '3rem', color: '#D0D0D0' }}>
               Precision-engineered defense equipment for elite operators. 
